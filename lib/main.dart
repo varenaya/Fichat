@@ -380,6 +380,9 @@ class _MyHomePageState extends State<MyHomePage> {
                 Flexible(
                   child: TextFormField(
                     controller: textEditingController,
+                    onChanged: (value) {
+                      roomId = value;
+                    },
                   ),
                 )
               ],
